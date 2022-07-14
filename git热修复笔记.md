@@ -12,7 +12,7 @@
 
 ​	1、切换分支：git checkout 《分支名》
 
-​	2、合并：git merge Hot_br20220630 分支 合并到master分支上	
+​	2、合并：git merge Hot_br20220630 分支       合并到master分支上	
 
 ​	3、项目打包：npm run build
 
