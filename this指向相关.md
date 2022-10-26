@@ -1,8 +1,3 @@
-// 面试题：onclick 和 addEventListener 的应用场景？
-// 答: 如果你的页面中需要写一些正常的业务逻辑时，可以用onclick
-// 如果你封装一些公共的插件时，建议写addEventListener
-// 因为插件中写的addEventListener不会影响用户的其他操作
-// 用户声明的onclick事件，不会覆盖掉你的插件的事件。
 /**
  * 构造函数中的this指向是slider
  * Slider构造函数中才会有这些方法：createDots createDot initDots getContainerCssText

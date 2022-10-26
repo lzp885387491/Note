@@ -62,44 +62,6 @@ npm install -g @vue/cli
 1. 在src文件夹下键一个router文件夹
 2. 在router文件夹下键一个index.js
 
-7、vue-cli 中可以用jquery吗？
-
-答：不建议这么使用
-
-``` js
-原因：vue不建议操作dom
-而jQuery是操作dom
-完全相反
-```
-
-8、说一下路由的懒加载？
-
-```js
-路由懒加载也叫按需加载，在加载路由时，用 import PageName from "../views/pageName/PageName.vue" 实现普通加载
-用 import(/*webpackChunkName:'PageName'*/'../views/pageName/PageName.vue')实现懒加载
-懒加载可以提升页面加载速度，在用户访问对应的页面时，，才去加载对应的页面模块，实现性能提升
-通常情况下，项目中的首页及登录页面是普通加载，其他场景都是懒加载
-例如：
-var route=[
-    {
-        path:'/home',
-        component:Home
-    },
-    {
-		path:'/activityDetail',
-        component:import(/*webpackChunkName:'PageName'*/'../views/pageName/PageName.vue')
-    }
-]
-```
-
-知识点：配置路由相关的规则
-
-``` js
-1、配置路由时，path路径要以/开头，通常情况下，使用驼峰命名法
-2、通常情况下，path的值和name的值保持一致，只不过name的值 首字母应该大写
-3、通常情况下，path值要和该模块的名才能保持一致 比如：path：'activeityDetail'  name:'ActivityDetail' activityDetail.vue
-```
-
 9、移动端相关知识点？
 
 ```js
@@ -107,27 +69,5 @@ var route=[
 2、移动端的屏幕的宽应该等于设计稿的整数倍，一般情况下是两倍
 3、目前市场上主流的所有的移动端的设计稿宽为：750px
 4、设计稿为手机分辨率的两倍  换句话说 我们在开发时 我们的手机屏宽应该调成 375px 也就是 iphoneSE 
-```
-
-10、如何适配移动端？
-
-```js
-答：利用ali适配方案来解决
-// ali适配方案底层采用 rem 布局实现适配
-```
-
-11、在前端项目中你做过那些优化？
-
-```js
-1、cmd
-2、webpack模块中配置路由懒加载
-3、图片优化中可以用雪碧图来减少请求
-```
-
-12、说一下对rem的理解？
-
-```js
-// rem是一个相对单位，它是基于根元素字体大小的变化而变化
-
 ```
 
