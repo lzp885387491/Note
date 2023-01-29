@@ -1,9 +1,9 @@
 // pages/article/detail.js
 // 
-const util = require('./util.js')
+// const util = require('./util.js')
 
-let sum = util.sum(10, 20);
-console.log(sum);
+// let sum = util.sum(10, 20);
+// console.log(sum);
 Page({
   /**
    * 页面的初始数据
