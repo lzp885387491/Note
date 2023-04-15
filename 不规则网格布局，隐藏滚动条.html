@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            gap:20px;
+            grid-template-areas: 
+                'header header'
+                'left-1 right-1'
+                'left-2 right-2'
+                'left-2 right-3'
+            ;
+        }
+
+        .container div:nth-of-type(1){
+            grid-area: header;
+        }
+        .container div:nth-of-type(2){
+            grid-area: left-1;
+        }
+        .container div:nth-of-type(3){
+            grid-area: right-1;
+        }
+        .container div:nth-of-type(4){
+            grid-area: left-2;
+        }
+        .container div:nth-of-type(5){
+            grid-area: right-2;
+        }
+        .container div:nth-of-type(6){
+            grid-area: right-3;
+        }
+
+        .container div{
+            background: red;
+        }
+
+        .box{
+            width:100px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar{
+            width:0;
+            height:0
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了撒娇的反馈了
+    </div> -->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>
+            3
+        </div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
